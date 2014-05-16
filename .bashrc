@@ -141,6 +141,7 @@ alias pycharm="~/Downloads/pycharm-community-3.1.1/bin/pycharm.sh"
 alias j="~/Downloads/j64-801/bin/jconsole"
 alias shutdown="sudo shutdown -h now"
 alias restart="sudo shutdown -r now"
+alias sgit="git"
 
 
 # If this is an xterm set the title to user@host:dir
