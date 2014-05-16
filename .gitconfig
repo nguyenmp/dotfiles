@@ -1,0 +1,12 @@
+[user]
+	name = Mark Nguyen
+	email = mpnguyen@umail.ucsb.edu
+[core]
+	editor = vim
+[color]
+	status = true
+	branch = true
+	interactive = true
+	diff = true
+[push]
+	default = simple
