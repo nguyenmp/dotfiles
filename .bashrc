@@ -113,6 +113,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Load the git prompt file for prompts
+source ~/git-prompt.sh
+
 # Installed files
 export JAVA_HOME=/usr/lib/jvm/jdk1.7.0/
 export PATH=/usr/lib/jvm/jdk1.7.0/bin:$PATH
@@ -156,3 +159,4 @@ function swap {
 	cp "$2" "$1";
 	mv "/tmp/file1234" "$2"
 }
+
