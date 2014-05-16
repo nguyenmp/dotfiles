@@ -113,24 +113,32 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Installed files
 export JAVA_HOME=/usr/lib/jvm/jdk1.7.0/
 export PATH=/usr/lib/jvm/jdk1.7.0/bin:$PATH
 export ANDROID_HOME=$HOME/Downloads/android-sdk-linux
 export PATH=${PATH}:$HOME/Downloads/android-sdk-linux/tools:$HOME/Downloads/android-sdk-linux/platform-tools
 export PATH=${PATH}:$HOME/Downloads/scala-2.10.3/bin
 export PATH=${PATH}:$HOME/Downloads/gradle-1.11/bin
-alias android-studio="~/Downloads/android-studio/bin/studio.sh"
-alias intellij="~/Downloads/idea-IC-135.475/bin/idea.sh "
-alias eclipse="~/Downloads/eclipse/eclipse"
-alias pycharm="~/Downloads/pycharm-community-3.1.1/bin/pycharm.sh"
+export PATH=$PATH:~/bin/git-ftp/
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
-alias j="~/Downloads/j64-801/bin/jconsole"
 
+# Custom PyEnv install
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH=${PATH}:$PYENV_ROOT/bin
 eval "$(pyenv init -)"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# Command Aliases
+alias android-studio="~/Downloads/android-studio/bin/studio.sh"
+alias intellij="~/Downloads/idea-IC-135.475/bin/idea.sh "
+alias eclipse="~/Downloads/eclipse/eclipse"
+alias pycharm="~/Downloads/pycharm-community-3.1.1/bin/pycharm.sh"
+alias j="~/Downloads/j64-801/bin/jconsole"
+alias shutdown="sudo shutdown -h now"
+alias restart="sudo shutdown -r now"
+
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
@@ -141,3 +149,10 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+
+# Swap function that takes in two arguments and moves them to each other's location
+function swap {
+	cp "$1" "/tmp/file1234";
+	cp "$2" "$1";
+	mv "/tmp/file1234" "$2"
+}
