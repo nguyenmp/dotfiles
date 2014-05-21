@@ -65,7 +65,7 @@ unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
-xterm*|rxvt*)
+xterm*|rxvt*|screen*)
     PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
     ;;
 *)
@@ -145,8 +145,9 @@ alias sgit="git"
 
 
 # If this is an xterm set the title to user@host:dir
+echo "$TERM"
 case "$TERM" in
-xterm*|rxvt*)
+xterm*|rxvt*|screen)
     PS1="\[$GREEN\]\t\[$RED\]-\[$BLUE\]\u\[$YELLOW\]\[$YELLOW\]\w\[\033[m\]\[$MAGENTA\]\$(__git_ps1)\[$WHITE\]\n\$ "
     #PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
     ;;
