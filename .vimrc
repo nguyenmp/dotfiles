@@ -35,12 +35,14 @@ function! ToggleCopyMode()
         set nonumber
         set norelativenumber
         set noai nocin nosi inde=
+        set formatoptions=
         echo "Copy-Paste Mode Enabled"
     else
         set mouse=a
         set number
         set relativenumber
         set ai cin si inde=<CR>
+        set formatoptions=crotq
         echo "Copy-Paste Mode Disabled"
     endif
 endfunction
