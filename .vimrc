@@ -17,6 +17,7 @@ filetype plugin indent on " Enable filetype plugins for lang-specific scripts
 :set smartindent  " Auto-indent at beginning of lines
 :set smarttab     " Get backspaces to work with tab-spaces
 :set mouse=a
+:set ttymouse=xterm2
 
 :set backspace=indent,eol,start
 
