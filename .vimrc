@@ -1,4 +1,4 @@
-:let g:tabsize = 4
+:let g:tabsize = 2
 
 syntax on                 " Enable syntax highlighting
 filetype plugin indent on " Enable filetype plugins for lang-specific scripts
@@ -20,6 +20,7 @@ filetype plugin indent on " Enable filetype plugins for lang-specific scripts
 :set ttymouse=xterm2
 
 :set backspace=indent,eol,start
+:set hlsearch
 
 "highlight clear SignColumn " Remove background highlighting for gutter
 highlight LineNr ctermfg=darkgrey ctermbg=NONE " Dark grey line numbers
