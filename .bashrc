@@ -235,3 +235,4 @@ function swap {
 	mv "/tmp/file1234" "$2"
 }
 
+tmux
