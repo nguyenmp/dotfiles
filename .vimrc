@@ -1,3 +1,7 @@
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 :let g:tabsize = 2
 
 syntax on                 " Enable syntax highlighting
