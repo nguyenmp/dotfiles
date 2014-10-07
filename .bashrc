@@ -196,9 +196,9 @@ export PATH=/usr/lib/jvm/jdk1.7.0/bin:$PATH
 export ANDROID_HOME=$HOME/Downloads/android-sdk-linux
 export PATH=${PATH}:$HOME/Downloads/android-sdk-linux/tools:$HOME/Downloads/android-sdk-linux/platform-tools
 export PATH=${PATH}:$HOME/Downloads/scala-2.10.3/bin
-export PATH=${PATH}:$HOME/Downloads/gradle-1.11/bin
+export PATH=${PATH}:$HOME/Downloads/gradle-1.12/bin
 export PATH=$PATH:~/bin/git-ftp/
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rvm/bin:$PATH" # Add RVM to PATH for scripting
 
 
 # Custom PyEnv install
@@ -208,7 +208,7 @@ eval "$(pyenv init -)"
 
 
 # Command Aliases
-alias android-studio="~/Downloads/android-studio/bin/studio.sh"
+alias android-studio="~/Downloads/android-studio-0.8.1/bin/studio.sh"
 alias intellij="~/Downloads/idea-IC-135.475/bin/idea.sh "
 alias eclipse="~/Downloads/eclipse/eclipse"
 alias pycharm="~/Downloads/pycharm-community-3.1.1/bin/pycharm.sh"

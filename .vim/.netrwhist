@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/mark/csil_status/build'
+let g:netrw_dirhist_2='/home/mark/grawler/build'
+let g:netrw_dirhist_3='/home/mark/csil_status/build'
+let g:netrw_dirhist_4='/home/mark/grawler2/src/com/nguyenmp/grawler'
+let g:netrw_dirhist_5='/home/mark/procore/features/step_definitions/helper_steps'
+let g:netrw_dirhist_6='/home/mark/procore/features/step_definitions/helpers_xp'
+let g:netrw_dirhist_7='/home/mark/jreddit-console/.git'
