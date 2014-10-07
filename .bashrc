@@ -191,8 +191,8 @@ fi
 source ~/git-prompt.sh
 
 # Installed files
-export JAVA_HOME=/usr/lib/jvm/jdk1.7.0/
-export PATH=/usr/lib/jvm/jdk1.7.0/bin:$PATH
+export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_67/
+export PATH=/usr/lib/jvm/jdk1.7.0_67/bin:$PATH
 export ANDROID_HOME=$HOME/Downloads/android-sdk-linux
 export PATH=${PATH}:$HOME/Downloads/android-sdk-linux/tools:$HOME/Downloads/android-sdk-linux/platform-tools
 export PATH=${PATH}:$HOME/Downloads/scala-2.10.3/bin
